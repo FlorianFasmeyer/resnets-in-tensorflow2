@@ -86,7 +86,7 @@ def duplicated_preactivation_block(
         activation2=None,
         pre_activation=tf.keras.activations.relu):
 
-    if (activation2 is None) or (activation == activation2):
+    if activation2 is None:
         raise ValueError("The duplicated activation paths preactivation block was made to work with synergistic activation functions! If you do not wish to use two different activation functions, use the preactivation block instead. Example: ´cifar_resnet32(block_type='preactivated'´")
     
     if preact_block:
