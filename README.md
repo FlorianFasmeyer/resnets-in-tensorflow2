@@ -2,6 +2,10 @@
 
 This is a variation from Szymon Mikler's original ResNets in Tensorflow 2.0, allowing for synergistic activation functions.
 
+---
+
+# Original description:
+
 Nice and tidy implementation of various neural networks for classification in tensorflow 2.0. \
 Everything in one place with results matching those reported in papers.
 
