@@ -1,19 +1,19 @@
-# ResNets in Tensorflow 2.0 with Synergistic Activation Functions.
+# ResNets in Tensorflow 2.0 with Synergistic Activation Functions
 
-This variation from [Szymon Mikler](https://github.com/sjmikler)'s original ResNets in Tensorflow 2.0 allows for synergistic activation functions.
+This variation of [Szymon Mikler](https://github.com/sjmikler)'s original ResNets in Tensorflow 2.0 allows for synergistic activation functions.
 
-This project was made to simplify the study of synergistic activation functions, the mixed usage of two or more activation functions within the same artificial neural network. This fork was created for future research on Synergistic Activation Functions to expedite the implementation phase and conduct experiments in a standardised and repeatable environment. 
+This project was created to simplify the study of synergistic activation functions, which involve the mixed usage of two or more activation functions within the same artificial neural network. This fork was made for future research on Synergistic Activation Functions to expedite the implementation phase and conduct experiments in a standardized and repeatable environment.
 
-Activation functions are assigned in a block-wise manner (related to ResNet blocks). It allows for two implementations of Synergistic Activation Functions in ResNets: the Duplicated Paths and the Alternated Function implementation.
+Activation functions are assigned in a block-wise manner (related to ResNet blocks). It enables two implementations of Synergistic Activation Functions in ResNets: the Duplicated Paths and the Alternated Function implementation.
 
 ![Comparing classical Neural Networks with mixed activations. 1st method: Alternate the activation function from one block to another. 2nd method: Duplicate the model paths, allowing for two different activation functions to be run in parallel.](https://github.com/FlorianFasmeyer/resnets-in-tensorflow2/blob/master/Images/mixed_functions.png)
 
 Potential improvements include:
-* Allow for more than two activation functions: Generalize the library to accept an arbitrary number of functions
-* Allow to manage ratios of activation functions: For now, you will end up with a 50/50 mix. Being able to use ratios 20/80 could be studied.
-* Create specialized back-propagation and learning-rate control mechanisms: Every Neural Network algorithm was built with the assumption of a single activation. Should the learning rate be applied similarly between functions? Will the back-propagation algorithm lead one activation block to learn faster than others, leading to most of the learning process happening on only one side of the network?
+- Allow for more than two activation functions: Generalize the library to accept an arbitrary number of functions.
+- Allow management of ratios of activation functions: Currently, you will end up with a 50/50 mix. Being able to use ratios like 20/80 could be studied.
+- Create specialized back-propagation and learning-rate control mechanisms: Every Neural Network algorithm was built with the assumption of a single activation. Should the learning rate be applied similarly between functions? Will the back-propagation algorithm lead one activation block to learn faster than others, potentially causing most of the learning process to occur on only one side of the network?
 
-Do not hesitate to send a pull request to add functionalities. Add your name to the contributors' list! 
+Do not hesitate to send a pull request to add functionalities. Add your name to the contributors' list!
 
 **Contributors:**
 
