@@ -1,4 +1,4 @@
-# ResNets in Tensorflow 2.0 with synergistic activation functions.
+# ResNets in Tensorflow 2.0 with Synergistic Activation Functions.
 
 This variation from Szymon Mikler's original ResNets in Tensorflow 2.0 allows for synergistic activation functions.
 
