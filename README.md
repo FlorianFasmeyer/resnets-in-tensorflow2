@@ -1,6 +1,25 @@
-# ResNets in Tensorflow 2.0 on CIFAR-10 with synergistic activation functions.
+# ResNets in Tensorflow 2.0 with Synergistic Activation Functions.
 
-This is a variation from Szymon Mikler's original ResNets in Tensorflow 2.0, allowing for synergistic activation functions.
+This variation from [Szymon Mikler](https://github.com/sjmikler)'s original ResNets in Tensorflow 2.0 allows for synergistic activation functions.
+
+This project was made to simplify the study of synergistic activation functions, the mixed usage of two or more activation functions within the same artificial neural network. This fork was created for future research on Synergistic Activation Functions to expedite the implementation phase and conduct experiments in a standardised and repeatable environment. 
+
+Activation functions are assigned in a block-wise manner (related to ResNet blocks). It allows for two implementations of Synergistic Activation Functions in ResNets: the Duplicated Paths and the Alternated Function implementation.
+
+Potential improvements include:
+* Allow for more than two activation functions: Generalize the library to accept an arbitrary number of functions
+* Allow to manage ratios of activation functions: For now, you will end up with a 50/50 mix. Being able to use ratios 20/80 could be studied.
+* Create specialized back-propagation and learning-rate control mechanisms: Every Neural Network algorithm was built with the assumption of a single activation. Should the learning rate be applied similarly between functions? Will the back-propagation algorithm lead one activation block to learn faster than others, leading to most of the learning process happening on only one side of the network?
+
+Do not hesitate to send a pull request to add functionalities. Add your name to the contributors' list! 
+
+**Contributors:**
+
+- [Florian E. Fasmeyer](https://github.com/FlorianFasmeyer)
+
+---
+
+#### Description from the original project:
 
 Nice and tidy implementation of various neural networks for classification in tensorflow 2.0. \
 Everything in one place with results matching those reported in papers.
