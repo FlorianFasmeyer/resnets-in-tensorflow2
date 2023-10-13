@@ -6,6 +6,8 @@ This project was made to simplify the study of synergistic activation functions,
 
 Activation functions are assigned in a block-wise manner (related to ResNet blocks). It allows for two implementations of Synergistic Activation Functions in ResNets: the Duplicated Paths and the Alternated Function implementation.
 
+![Comparing classical Neural Networks with mixed activations. 1st method: Alternate the activation function from one block to another. 2nd method: Duplicate the model paths, allowing for two different activation functions to be run in parallel.](https://github.com/FlorianFasmeyer/resnets-in-tensorflow2/blob/master/Images/mixed_functions.png)
+
 Potential improvements include:
 * Allow for more than two activation functions: Generalize the library to accept an arbitrary number of functions
 * Allow to manage ratios of activation functions: For now, you will end up with a 50/50 mix. Being able to use ratios 20/80 could be studied.
