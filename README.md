@@ -1,6 +1,6 @@
 # ResNets in Tensorflow 2.0 with Synergistic Activation Functions.
 
-This variation from Szymon Mikler's original ResNets in Tensorflow 2.0 allows for synergistic activation functions.
+This variation from [Szymon Mikler](https://github.com/sjmikler)'s original ResNets in Tensorflow 2.0 allows for synergistic activation functions.
 
 This project was made to simplify the study of synergistic activation functions, the mixed usage of two or more activation functions within the same artificial neural network. This fork was created for future research on Synergistic Activation Functions to expedite the implementation phase and conduct experiments in a standardised and repeatable environment. 
 
