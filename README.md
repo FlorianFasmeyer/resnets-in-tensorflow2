@@ -6,6 +6,11 @@ This project was made to simplify the study of synergistic activation functions,
 
 Activation functions are assigned in a block-wise manner (related to ResNet blocks). It allows for two implementations of Synergistic Activation Functions in ResNets: the Duplicated Paths and the Alternated Function implementation.
 
+Potential improvements include:
+* Allow for more than two activation functions: Generalize the library to accept an arbitrary number of functions
+* Allow to manage ratios of activation functions: For now, you will end up with a 50/50 mix. Being able to use ratios 20/80 could be studied.
+* Create specialized back-propagation and learning-rate control mechanisms: Every Neural Network algorithm was built with the assumption of a single activation. Should the learning rate be applied similarly between functions? Will the back-propagation algorithm lead one activation block to learn faster than others, leading to most of the learning process happening on only one side of the network?
+
 ---
 
 #### Description from the original project:
