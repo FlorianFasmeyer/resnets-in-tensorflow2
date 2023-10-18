@@ -10,15 +10,10 @@ Activation functions are assigned in a block-wise manner (related to ResNet bloc
 
 Potential improvements include:
 - Allow for more than two activation functions: Generalize the library to accept an arbitrary number of functions.
-- Allow management of ratios of activation functions: Currently, you will end up with a 50/50 mix. Being able to use ratios like 20/80 could be studied.
-- Create specialized back-propagation and learning-rate control mechanisms: Every Neural Network algorithm was built with the assumption of a single activation. Should the learning rate be applied similarly between functions? Will the back-propagation algorithm lead one activation block to learn faster than others, potentially causing most of the learning process to occur on only one side of the network?
+- Allow management of ratios of activation functions: Currently, you will end up with a 50/50 mix. Using ratios like 20/80 could be studied.
+- Create specialized back-propagation and learning-rate control mechanisms: Every Neural Network algorithm was built with the assumption of a single activation. Should the learning rate be applied similarly between functions? Will the back-propagation algorithm lead one activation block to learning faster than others, potentially causing most of the learning process to occur on only one side of the network?
 
-Do not hesitate to send a pull request to add functionalities. Add your name to the contributors' list!
-
-**Contributors:**
-
-- [Florian E. Fasmeyer](https://github.com/FlorianFasmeyer)
-
+Do not hesitate to send a pull request to add functionalities.
 ---
 
 #### Description from the original project:
