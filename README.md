@@ -14,6 +14,7 @@ Potential improvements include:
 - Create specialized back-propagation and learning-rate control mechanisms: Every Neural Network algorithm was built with the assumption of a single activation. Should the learning rate be applied similarly between functions? Will the back-propagation algorithm lead one activation block to learning faster than others, potentially causing most of the learning process to occur on only one side of the network?
 
 Do not hesitate to send a pull request to add functionalities.
+
 ---
 
 #### Description from the original project:
